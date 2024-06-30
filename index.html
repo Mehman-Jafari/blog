@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог приложение</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="post">
+        <div class="post__container _container">
+          <div class="post__row">
+            <div class="post__column">
+              <h2 class="post__block-title">Новый пост</h2>
+              <div class="post__content-block js-post__content-block-message-error">
+                <form action="#" class="post__form">
+                    <input type="text" placeholder="Заголовок" class="post__input-title js-post__input-title">
+                    <textarea class="post__textarea-text js-post__textarea-text" placeholder="Напиши пост" name="" id=""></textarea>
+                    <button class="post__btn-publication js-post__btn-publication">Опубликовать</button>
+                </form>
+                <!--<p class="post__title-warning js-post__title-warning">Заголовок больше 100 символов</p>-->
+                <!--<p class="post__text-warning js-post__text-warning">Пост больше 200 символов</p>-->
+              </div>
+            </div>
+            <div class="post__column">
+              <h2 class="post__block-title">Лента</h2>
+              <div class="post__content-block js-post__content-block-list">
+                <p class="post__text-none js-post__text-none">Тут пока пусто...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+/* Основные стили */
+.post {
+}
+
+.post__container {
+}
+
+.post__row {
+  display: flex;
+  gap: 5%;
+}
+
+.post__column {
+  margin-top: 10%;
+  flex: 1 1 50%;
+  min-width: 320px;
+}
+
+.post__block-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10%;
+  color: var(--color-text-dark);
+}
+
+.post__content-block {
+}
+
+.post__form {
+}
+
+.post__input-title {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-input-text);
+  padding: 10px 20px;
+  border: 1px solid var(--color-text-dark);
+}
+
+.post__textarea-text {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-input-text);
+  padding: 10px 20px;
+  margin: 30px 0;
+  border: 1px solid var(--color-text-dark);
+  height: 250px;
+  resize: none;
+}
+
+.post__btn-publication {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-text-white);
+  background-color: var(--color-btn);
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+
+.post__title-warning {
+  font-size: 25px;
+  color: var(--color-warning);
+  margin-top: 30px;
+}
+
+.post__text-warning {
+  font-size: 25px;
+  color: var(--color-warning);
+  margin-top: 30px;
+}
+
+.post__text-none {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-input-text);
+}
+
+.post__content-item {
+  margin-bottom: 50px;
+}
+
+.post__data {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color-btn);
+}
+
+.post__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.post__description {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .post__btn-publication:focus {
+    background-color: var(--color-text-dark);
+  }
+}
+
+@media (max-width: 700px) {
+  .post__row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 460px) {
+  .post__column {
+    min-width: 100%;
+  }
+}
