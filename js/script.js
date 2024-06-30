@@ -38,7 +38,15 @@ btnPublicationNode.addEventListener("click", () => {
   addPost(postFromUser);
   
   renderPost(postFromUser);
+
+  clearInput(inputTitleNode, inputDescriptionNode)
 });
+
+// Функция очищения полей после публикации
+function clearInput(title, description) {
+  title.value = '';  
+  description.value = '';  
+};
 
 // Функция получения данных от пользователя
 function getPostFromUser() {
@@ -51,19 +59,19 @@ function getPostFromUser() {
     description,
     fullTimePost,
   };
-}
+};
 
 // Функция добавления поста в массив posts
 function addPost(postFromUser) {
   posts.push(postFromUser);
-}
+};
 
 // Функция проверяет Объект с ключами title и description если они совместимы с текущими value то не добавлять пост в массив с объектами
 function edualTitleAndDescriptionWitchInput(postFromUser) {
   return posts.some(
     (post) => postFromUser.title === post.title && postFromUser.description === post.description
   );
-}
+};
 
 // Функция валидации input если заголовок или описание больше 100 или 200 символов то выведет ошибку
 function ValidationInputLengthMax(
@@ -91,7 +99,7 @@ function ValidationInputLengthMax(
       btnPublicationNode.removeAttribute("disabled");
     }
   });
-}
+};
 
 // Функция генерации публикации поста при нажатии кнопки публикации
 function generateDatePost() {
@@ -105,7 +113,7 @@ function generateDatePost() {
   let formattedTime = `${dayPost}.${monthPost}.${yearPost} ${hoursPost}:${minutesPost}`;
 
   return formattedTime;
-}
+};
 
 // Функция формирования поста из title и description
 function renderPost(post) {
@@ -120,4 +128,4 @@ function renderPost(post) {
         </div>
     `;
   }
-}
+};
